@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from 'react';
 import { client } from '../../lib/contentful';
 import FormReserva from '../../components/Reserva/index'
 import { HomeContainer, Section, ContentGrid, CardPlaceholder, EventCard } from './styles';
+import cardapioAlimento from '../../images/cardapioAlimento.png';
+import cardapioBebida from '../../images/cardapioBebida.png';
 
 
 export function Galeria({ imagens }) {
@@ -132,10 +134,10 @@ export function Home() {
             <h2>Cardápio</h2>
             <ContentGrid>
                 <CardPlaceholder>
-                    <strong>Carregando cardápio...</strong>
+                    <img src={cardapioAlimento} alt="Cardápio Alimentos" />
                 </CardPlaceholder>
                 <CardPlaceholder>
-                    <strong>Carregando cardápio...</strong>
+                    <img src={cardapioBebida} alt="Cardápio Bebidas" />
                 </CardPlaceholder>
             </ContentGrid>
             </Section>

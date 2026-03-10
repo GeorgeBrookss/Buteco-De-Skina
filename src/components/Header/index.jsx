@@ -1,5 +1,6 @@
-import { HeaderContainer, Logo, NavBar } from './styles';
+import { HeaderContainer, Logo, NavBar, EnderecoContainer } from './styles';
 import LogoQdE from '../../images/LogoQdE.png';
+import localizacao from '../../images/localizacao.png';
 
 export function Header() {
     return (
@@ -15,6 +16,7 @@ export function Header() {
                 <a href="#cardapio">Cardápio</a>
                 <a href="#reservas">Reservas</a>
             </NavBar>
+            <EnderecoContainer> <img src={localizacao} alt="Localização" />Av Conselheiro Rodrigues Alves 180</EnderecoContainer>
         </HeaderContainer>
     )
 }

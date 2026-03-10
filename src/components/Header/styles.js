@@ -52,3 +52,17 @@ export const NavBar = styled.nav`
     }
 }
 `;
+
+export const EnderecoContainer = styled.h3`
+    color: #fffbf9;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 1rem;
+    text-align: center;
+    margin-top: 40px;
+    
+    img {
+        width: 20px;
+        margin-right: 10px;
+    }
+`
