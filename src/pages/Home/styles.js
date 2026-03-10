@@ -45,7 +45,8 @@ export const HomeContainer = styled.main`
 
 export const Section = styled.section`
 h2 {
-    font-size: 2rem;
+    font-size: 24px;
+    line-height: 32px;
     color: #000000d3;
     margin-bottom: 2rem;
     border-left: 3px solid #F2660E;
@@ -67,9 +68,9 @@ export const CardPlaceholder = styled.div`
     min-height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    text-align: center;
+    text-align: left;
     border: 1px dashed #555;
 
     strong {
@@ -79,7 +80,10 @@ export const CardPlaceholder = styled.div`
         margin-bottom: 0.5rem;
 }
     p {
-        max-width: 400px;
+        width: 100%;
+        max-width: 414px;
+        font-size: 16px;
+        line-height: 24px;
         text-align: left;
     }
 
