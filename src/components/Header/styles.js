@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FundoTexture from '../../images/texturecup.JPG';
+import FundoTexture from '../../images/texturecup.jpg';
 
 export const HeaderContainer = styled.header`
     width: 100%;
