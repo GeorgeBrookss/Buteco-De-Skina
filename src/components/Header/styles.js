@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import FundoTexture from '../../images/texturecup.JPG';
 
 export const HeaderContainer = styled.header`
     width: 100%;
@@ -8,10 +9,18 @@ export const HeaderContainer = styled.header`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(${FundoTexture});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     border-bottom: 1px solid #F2660E;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 5px 5px 15px rgba(255, 180, 5, 0.75);
 `;
 
 export const Logo = styled.h1`
+    font-family: "Roboto", sans-serif;
     font-size: 2px;
     color: #4b2c2cff;
     text-transform: uppercase;
@@ -24,6 +33,7 @@ export const Logo = styled.h1`
         height: 300px; 
         display: block; 
         margin: 0 auto; 
+        
     }
 
     span {
@@ -37,17 +47,22 @@ export const NavBar = styled.nav`
 
     a {
     text-decoration: none;
-    color: #fffbf9 ;
+    color: #3E2723;
+    text-shadow: 1px 1px 3px rgba(125, 60, 4, 0.5);
     font-weight: bold;
     font-size: 1.125rem;
     transition: color 0.2s;
 
     &:hover {
-        color: #f3ce9dff;
+        color: rgb(198, 0, 0);
     }
 }
 
 @media (max-width: 600px) {
+    font-size: 20px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 
     a {
@@ -57,9 +72,11 @@ export const NavBar = styled.nav`
 `;
 
 export const EnderecoContainer = styled.h3`
-    color: #fffbf9;
+    color: #3E2723;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
     font-size: 15px;
-    font-weight: 100;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
     margin-top: 1rem;
     text-align: center;
     margin-top: 40px;
@@ -67,5 +84,6 @@ export const EnderecoContainer = styled.h3`
     img {
         width: 20px;
         margin-right: 10px;
-    }
+        filter: drop-shadow(4px 4px 6px black);
+        }
 `

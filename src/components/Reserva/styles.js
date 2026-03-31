@@ -1,9 +1,12 @@
 import styled from "styled-components";
-
+import fundoEvento from '../../images/fundoEvent.jpg';
 
 export const FormStyled = styled.form`
     text-align: center;
+    font-family: "Roboto", sans-serif;
     background-color: #ffe4c3;
+    background-image: url(${fundoEvento});
+    background-size: cover;
     border: 1px dashed #000;
     border-radius: 10px;
 

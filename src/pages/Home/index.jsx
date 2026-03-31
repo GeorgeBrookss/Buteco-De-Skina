@@ -96,9 +96,9 @@ export function Home() {
 
                     <br />
 
-                    <h3>{sobre.fields.titulo}</h3>
+                    <h3 style={{ fontFamily: '"Roboto", sans-serif' }}>{sobre.fields.titulo}</h3>
                     <br />
-                    <p>{sobre.fields.descricao}</p>
+                    <p style={{ fontFamily: '"Roboto", sans-serif' }}>{sobre.fields.descricao}</p>
                     </CardPlaceholder>
                 )}
             </Section>
@@ -108,7 +108,7 @@ export function Home() {
             <ContentGrid>
                 {eventos.length === 0 && (
                     <CardPlaceholder>
-                        <strong>Carregando programação...</strong>
+                        <strong >Carregando programação...</strong>
                     </CardPlaceholder>
                 )}
 
@@ -123,7 +123,7 @@ export function Home() {
                         <div className="info">
                             <strong>{item.fields.titulo}</strong>
                             <span>{formatarData(item.fields.dataDoEvento)}</span>
-                            <p>{item.fields.descricao}</p>
+                            <p style={{ fontFamily: '"Roboto", sans-serif' }}>{item.fields.descricao}</p>
                         </div>
                     </EventCard>
                 ))}

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import FundoEvento from '../../images/fundoEvent.jpg';
 
 export const HomeContainer = styled.main`
     max-width: 1120px;
@@ -34,7 +35,7 @@ export const HomeContainer = styled.main`
         flex: 0 0 auto;
 
         width: 100%;
-        height: 550px;
+        height: 100%;
 
         object-fit: cover;
         border-radius: 10px;
@@ -45,12 +46,11 @@ export const HomeContainer = styled.main`
 
 export const Section = styled.section`
 h2 {
-    font-size: 24px;
+    font-size: 34px;
+    font-family: "Lobster Two", sans-serif;
     line-height: 32px;
     color: #000000d3;
     margin-bottom: 2rem;
-    border-left: 3px solid #F2660E;
-    padding-left: 0.8rem;
 }
 `;
 
@@ -61,7 +61,8 @@ export const ContentGrid = styled.div`
 `;
 
 export const CardPlaceholder = styled.div`
-    background: #ffe4c3;
+    background-image: url(${FundoEvento});
+    background-size: cover;
     padding: 1.5rem;
     border-radius: 6px;
     color: #000004ff;
@@ -71,15 +72,17 @@ export const CardPlaceholder = styled.div`
     justify-content: left;
     align-items: center;
     text-align: left;
-    border: 1px dashed #555;
+    border: 1px solid #55555525;
+    box-shadow: 0 4px 14px rgba(62, 39, 35, 0.05);
 
     strong {
         display: block;
-        color: #000000ff;
+        color: #3E2723;
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
 }
     p {
+        color: #2D2D2D;
         width: 100%;
         max-width: 414px;
         font-size: 16px;
@@ -91,7 +94,8 @@ export const CardPlaceholder = styled.div`
 
 
 export const EventCard = styled.div`
-    background: #ffe4c3;
+    background-image: url(${FundoEvento});
+    background-size: cover;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -112,22 +116,24 @@ img {
     
     strong {
         display: block;
-        color: #120802;
+        color: #ff4800;
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
     }
 
     span {
         display: block;
-        color: #F2660E;
+        color: #cb4e00;
         font-size: 0.9rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
 
     p {
-        color: #120802;
-        font-size: 0.9rem;
+        color: #000000;
+        box-shadow: 0 14px 14px rgba(62, 39, 35, 0.05);;
+        font-size: 15px;
+        font-weight: bold;
         line-height: 1.4;
     }
 }
