@@ -1,5 +1,5 @@
 import { HeaderContainer, Logo, NavBar, EnderecoContainer } from './styles';
-import LogoQdE from '../../images/LogoQdE.png';
+import LogoQdE from '../../images/LogoBDS.svg';
 import localizacao from '../../images/localizacao.png';
 
 export function Header() {

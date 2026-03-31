@@ -12,15 +12,18 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Logo = styled.h1`
-    font-size: 2.5rem;
+    font-size: 2px;
     color: #4b2c2cff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2px;
     text-align: center;
 
     img {
-        max-width: 120px;
+        width: 300px; 
+        height: 300px; 
+        display: block; 
+        margin: 0 auto; 
     }
 
     span {

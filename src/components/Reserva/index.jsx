@@ -47,7 +47,11 @@ function FormReserva() {
         <input type="email" name="email" placeholder="Seu e-mail" required />
         <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required />
         <div className='datePart'>
+            <label style={{ borderRadius: '5px', marginBottom: '10px', marginLeft: '40%', width: 'fit-content', color: 'white', display: 'block', backgroundColor: 'orange' }}>
+                Data</label>
             <input type="date" name="data" required />
+            <label style={{ borderRadius: '5px', marginBottom: '10px', marginLeft: '37%', width: 'fit-content', color: 'white', display: 'block', backgroundColor: 'orange' }}>
+                Horário</label>
             <input type="time" name="hora" required />
         </div>
         <input type="number" name="pessoas" placeholder="Quantidade de pessoas" required />
