@@ -3,11 +3,12 @@ import fundoEvento from '../../images/fundoEvent.jpg';
 
 export const FormStyled = styled.form`
     text-align: center;
+    padding: 12px;
     font-family: "Roboto", sans-serif;
     background-color: #ffe4c3;
     background-image: url(${fundoEvento});
     background-size: cover;
-    border: 1px dashed #000;
+    border: 1px solid #0000001e;
     border-radius: 10px;
 
         .formPart {
@@ -46,7 +47,7 @@ export const FormStyled = styled.form`
 
             }
             .datePart {
-                padding: 20px;
+                text-align: center;
             }
         }   
 `

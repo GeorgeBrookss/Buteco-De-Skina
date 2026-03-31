@@ -98,7 +98,7 @@ export function Home() {
 
                     <h3 style={{ fontFamily: '"Roboto", sans-serif' }}>{sobre.fields.titulo}</h3>
                     <br />
-                    <p style={{ fontFamily: '"Roboto", sans-serif' }}>{sobre.fields.descricao}</p>
+                    <p style={{ fontFamily: '"Roboto", sans-serif',  whiteSpace: 'pre-line' }}>{sobre.fields.descricao}</p>
                     </CardPlaceholder>
                 )}
             </Section>
