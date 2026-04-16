@@ -130,22 +130,105 @@ export function Home() {
             </ContentGrid>
             </Section>
 
-            <Section id="cardapio">
-            <h2>Cardápio</h2>
-            <ContentGrid>
-                <CardPlaceholder>
-                    <img src={cardapioAlimento} alt="Cardápio Alimentos" />
-                </CardPlaceholder>
-                <CardPlaceholder>
-                    <img src={cardapioBebida} alt="Cardápio Bebidas" />
-                </CardPlaceholder>
-            </ContentGrid>
+            <Section id="Localizacao">
+                <h2>Onde Estamos</h2>                
+                <div style={{ 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    alignItems: 'center', 
+                    gap: '20px', 
+                    width: '100%', 
+                    maxWidth: '800px', 
+                    margin: '0 auto',
+                    padding: '20px'
+                }}>
+                    
+                    <p style={{ fontFamily: '"Roboto", sans-serif', fontSize: '1.1rem', textAlign: 'center', color: '#ff621a' }}>
+                        <strong>Nosso Endereço:</strong><br />
+                        Av. Conselheiro Rodrigues Alves, 180<br />
+                        Macuco - Santos, SP
+                    </p>
+
+                    <div style={{ width: '100%', height: '400px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', border: '2px solid #ff631a5f' }}>
+                        <iframe
+                            title="Mapa de Localização do Bar"
+                            src="https://maps.google.com/maps?q=Av.+Conselheiro+Rodrigues+Alves,+180+-+Santos,+SP&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+
+                    <a 
+                        href="https://www.google.com/maps/dir/?api=1&destination=Av.+Conselheiro+Rodrigues+Alves,+180+-+Santos,+SP" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{
+                            backgroundColor: '#ff621a',
+                            color: 'white',
+                            padding: '12px 24px',
+                            borderRadius: '8px',
+                            textDecoration: 'none',
+                            fontFamily: '"Roboto", sans-serif',
+                            fontWeight: 'bold',
+                            fontSize: '1.1rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '10px',
+                            transition: 'background-color 0.3s ease',
+                            boxShadow: '0 4px 6px rgba(255, 98, 26, 0.3)'
+                        }}
+                        onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#e55817'}
+                        onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#ff621a'}
+                    >
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/google-maps.png" alt="Maps Icon" style={{ width: '24px' }} />
+                        Como Chegar
+                    </a>
+                </div>
             </Section>
 
             <Section id="reservas">
             <h2>Faça sua Reserva</h2>
                 <FormReserva />
             </Section>
+            <footer style={{
+                marginTop: '10px',
+                padding: '10px 20px',
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '15px',
+                fontFamily: '"Roboto", sans-serif',
+                backgroundColor: 'transparent'
+            }}>
+                <div style={{ display: 'flex', gap: '20px', fontSize: '1.1rem' }}>
+                    <a 
+                        href="https://www.instagram.com/buteco.daskina/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        style={{ textDecoration: 'none', color: '#ff621a', fontWeight: '500' }}
+                    >
+                        <img style={{maxWidth: '40px'}} src="https://img.icons8.com/ios11/512/FD7E14/instagram-circle.png" alt="Instagram" />
+                    </a>
+                    <span style={{ color: '#ff8307', marginTop: '7%' }}>|</span>
+                    <a 
+                        href="https://wa.me/5513997682652" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        style={{ textDecoration: 'none', color: '#ff621a', fontWeight: '500' }}
+                    >
+                        <img style={{maxWidth: '40px'}} src="https://img.icons8.com/ios11/512/FD7E14/whatsapp.png" alt="WhatsApp" />
+                    </a>
+                </div>
+                
+                <div style={{ marginTop: '40px', fontSize: '0.9rem', color: '#ff621a' }}>
+                    &copy; 2026 by KromaStack Labs
+                </div>
+            </footer>
         </HomeContainer>
     )
 }
